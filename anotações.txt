@@ -1,7 +1,7 @@
 composer é um Gerenciador de pacotes (ou dependências)
 * Procura no Packagits (procurar os pacotes)
 
-Twig - é uam ferramente de gerenciamento de template, separa o que é php e html
+Twig - é uma ferramenta de gerenciamento de template, separa o que é php e html
 Mvc - model gerenciamento de dados/ view visualização / controller é a lógica
 baixar twig = composer require twig/twig
 carregar o autoload
