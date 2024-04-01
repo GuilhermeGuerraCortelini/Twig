@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<h3>Alterar Item</h3>
+
+<form action="compras_alt.php" method='post'>
+    <input type="hidden" name="id" value="{{id}}">
+    <input type="text" name="item" value="{{compra.item}}">
+    <input type="submit" value='Alterar'>
+</form>
+
+{% endblock %}
+    
+
