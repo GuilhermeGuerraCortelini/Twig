@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block conteudo %}
+    <h3>Adicionar Compromisso</h3>
+    <form action="compromissos_adc.php" method='post'>
+        <input type="text" name="descricao" placeholder="Digite sua descrição">
+        <input type="date" name="data">
+        <input type="submit" value='Adicionar'>
+    </form>
+    <hr>
+
+    <p>Estes são seus compromissos</p>
+    <table border='1'>
+        <th>Descrição</th>
+        <th>Data</th>
+        <th>Fim de semana</th>
+        <th>Ações</th>
+        {% for compromisso in compromissos %}
+            <tr>
+                <td>{{compromisso.descricao}}</td>
+                <td>{{compromisso.data}}</td>
+                <td>{{compromisso.fimdesemana ? 'Sim' : 'Não'}}</td>
+                <td><a href="compromissos_pegar_alterar.php?id={{compromisso.id}}">Alterar</a> |
+                    <a href="compromissos_dlt.php?id={{compromisso.id}}">Apagar</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

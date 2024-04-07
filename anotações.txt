@@ -8,3 +8,14 @@ carregar o autoload
 raiz = vai renderizar os arquivos html
 namespace - espaço de nome em que cada classe vai ter um namespace específico
 => equivalente
+
+12/04 Prova Teórica -> o que é cada coisa ? como funciona? pra que serve?
+
+extends -> buscar um arquivo como base de html
+render -> escolhe um template e renderiza ele na tela
+
+carbon = api do php / trabalhar com datas / pacote de um composer 
+composer require <nome do pacote> / exemplo: composer require nesbot/carbon 
+
+- composer require -> instalar um novo pacote (ja estou trabalhando no projeto e preciso de uma coisa nova)
+- composer install -> instalar todos os pacotes do projeto (composer.json) (tenho nada instalado) / composer.lock (versões)

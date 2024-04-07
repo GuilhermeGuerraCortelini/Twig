@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<h3>Alterar o compromisso</h3>
+
+<form action="compromissos_alt.php" method="post">
+    <input type="hidden" name="id" value="{{id}}">
+    <input type="text" name="descricao" value="{{descricao}}">
+    <input type="date" name="data" value="{{data}}">
+    <input type="submit" value="Alterar">
+</form>
+
+{% endblock %}

@@ -6,7 +6,7 @@ require_once('inc/banco.php');
 $dados = $pdo->query('SELECT * FROM compras');
 
 // fatchAll
-$compras = $dados->fetchAll(PDO::FETCH_ASSOC); // fetchAll(PDO::FETCH_ASSOC) trás só os nomes dos campos
+$compras = $dados->fetchAll(PDO::FETCH_ASSOC); // fetchAll(PDO::FETCH_ASSOC) trás só os nomes dos campos e não tudo
 
 echo $twig->render(
     'compras.html', 
