@@ -12,12 +12,12 @@ if($id){
         ':id' => $id,
     ]);
 
-    $descricao = $query->fetch(PDO::FETCH_ASSOC);
-    $data = $query->fetch(PDO::FETCH_ASSOC);
+    $compromisso = $query->fetch(PDO::FETCH_ASSOC);
+    
 }
 
 echo $twig->render('compromissos_alt.html',[
     'id' => $id,
-    'descricao' => $descricao['descricao'],
-    // 'data' => $data['data']
+    'descricao' => $compromisso['descricao'],
+    'data' => $compromisso['data']
 ]);

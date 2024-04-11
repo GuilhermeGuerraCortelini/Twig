@@ -1,13 +1,17 @@
 composer é um Gerenciador de pacotes (ou dependências)
-* Procura no Packagits (procurar os pacotes)
+* Procura no Packagits que é um repositório de dependências (procurar os pacotes)
 
-Twig - é uma ferramenta de gerenciamento de template, separa o que é php e html
+Twig - é uma ferramenta de gerenciamento de templates, separa o que é php e html
 Mvc - model gerenciamento de dados/ view visualização / controller é a lógica
 baixar twig = composer require twig/twig
 carregar o autoload
 raiz = vai renderizar os arquivos html
 namespace - espaço de nome em que cada classe vai ter um namespace específico
 => equivalente
+
+CRUD = CREATE / REATRIEVE / UPDATE / DELETE 
+
+PDO = tem variáveis ? Sim = prepare, bind / Não = query
 
 12/04 Prova Teórica -> o que é cada coisa ? como funciona? pra que serve?
 
@@ -19,3 +23,8 @@ composer require <nome do pacote> / exemplo: composer require nesbot/carbon
 
 - composer require -> instalar um novo pacote (ja estou trabalhando no projeto e preciso de uma coisa nova)
 - composer install -> instalar todos os pacotes do projeto (composer.json) (tenho nada instalado) / composer.lock (versões)
+- composer update -> fazer update do composer (atualizar) 
+
+fetchAll pega todas as linhas / fetch pega uma linha 
+
+$array['idade'] = 20 / criar um novo valor em um vetor que já existe
