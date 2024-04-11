@@ -28,3 +28,13 @@ composer require <nome do pacote> / exemplo: composer require nesbot/carbon
 fetchAll pega todas as linhas / fetch pega uma linha 
 
 $array['idade'] = 20 / criar um novo valor em um vetor que já existe
+
+baixar autenticator
+
+excluir o .git no htdocs para não versionar 
+
+git status / mostrar o status e ver se é ou não um repositório 
+git init / criar o repositório 
+
+master = branch principal do git
+commit é sempre local (na máquina)

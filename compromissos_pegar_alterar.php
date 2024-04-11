@@ -13,8 +13,8 @@ if($id){
     ]);
 
     $compromisso = $query->fetch(PDO::FETCH_ASSOC);
-    
 }
+
 
 echo $twig->render('compromissos_alt.html',[
     'id' => $id,
