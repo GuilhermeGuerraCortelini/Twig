@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<h3>Adicionar usuários</h3>
+<form action="usuarios_adc.php" method="post">
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <input type="password" name="senha" placeholder="Digite sua senha">
+    <input type="submit" value="Enviar">
+</form>
+<hr>
+<p>Lista de usuários</p>
+<table border="1">
+    <th>Nome</th>
+    <th>Senha</th>
+    <th>Ações</th>
+    {% for usuario in usuarios %}
+        <tr>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.senha}}</td>
+            <td><a href="usuarios_pegar_alterar.php?id={{usuario.id}}">Alterar</a> |
+                <a href="usuarios_dlt.php?id={{usuario.id}}">Apagar</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
