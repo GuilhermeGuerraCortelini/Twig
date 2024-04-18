@@ -37,4 +37,4 @@ git status / mostrar o status e ver se é ou não um repositório
 git init / criar o repositório 
 
 master = branch principal do git
-commit é sempre local (na máquina)
+commit é sempre local (na máquina) oi
