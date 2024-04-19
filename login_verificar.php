@@ -12,9 +12,16 @@ $senha_cripto = password_hash($senha, PASSWORD_BCRYPT);
 
 $verificar_senha = password_verify($senha, $senha_cripto);
 
-$dados = $pdo->query('SELECT * FROM usuarios'); 
+$dados = $pdo->prepare('SELECT * FROM usuarios WHERE nome = :nome'); 
+
+$dados->execute([
+    ':nome' => $nome
+]);
+
 $usuarios = $dados->fetch(PDO::FETCH_ASSOC);
 
 if($_SESSION['senha']){
-    header('location:usuarios.php');
+        header('location:usuarios.php');
+} else {
+    header('location:login.php');
 }
